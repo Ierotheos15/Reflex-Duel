@@ -1,50 +1,71 @@
 # Reflex Duel
 
-A two-player reaction time game on Arduino UNO. Both players get a button — wait for **GO!** to flash on the LCD and hit yours first. Press too early and the other player gets the point. First to 3 wins.
 
-The Arduino handles the countdown, randomized delay before GO, false start detection, reaction time display, LED feedback, buzzer sounds, and score tracking.
 
-Built for Hack Club Breadboard YSWS.
+![Reflex Duel](screenshot.png)
 
-🔗 [Open in Simulator](https://breadboard.hackclub.com/editor/164)
 
-## Wiring
+> Built in [Breadboard](https://breadboard.hackclub.com), a Hack Club program. This project took ~1.4 hours of work.
 
-![Wiring Diagram](wiring_diagram.png)
 
-| Component | Arduino Pin |
-|---|---|
-| Player 1 Button | D2 |
-| Player 2 Button | D3 |
-| Player 1 Blue LED (win) | D4 |
-| Player 1 Red LED (lose) | D5 |
-| Player 2 Yellow LED (win) | D6 |
-| Player 2 Red LED (lose) | D7 |
-| Passive Buzzer | D8 |
-| LCD SDA | A4 |
-| LCD SCL | A5 |
+
+## What It Does
+
+A reaction game to play with a friend to see who's reaction time a faster.
+
+
+## How It Works
+
+The circuit is captured in `breadboard-project.json`, and the firmware that runs it is in the `firmware/` folder.
+
+
+## How To Use It
+
+1 2 3
+
+
+## Demo
+
+- **Simulate it live:** [https://breadboard.hackclub.com/share/164](https://breadboard.hackclub.com/share/164), runs the firmware in the Breadboard simulator
+- **View the design:** [https://taniwankenobi.github.io/breadboard-plays/p/164/](https://taniwankenobi.github.io/breadboard-plays/p/164/)
+
+
+## Schematic
+
+The editor snapshot is in `breadboard-project.json`.
+
 
 ## Bill of Materials
 
-| Component | Qty |
-|---|---|
-| Arduino UNO R3 | 1 |
-| Breadboard | 1 |
-| Tact Switch 12x12 | 2 |
-| LED Red F5 | 2 |
-| LED Blue F5 | 1 |
-| LED Yellow F5 | 1 |
-| Resistor 220Ω | 4 |
-| Passive Buzzer | 1 |
-| LCD1602 | 1 |
-| LCD1602 I2C Adapter | 1 |
+| Part | Quantity |
+| --- | --- |
+| breadboard-full | 1 |
+| buzzer-passive | 1 |
+| lcd1602 | 1 |
+| lcd1602-i2c | 1 |
+| led-blue | 1 |
+| led-red | 2 |
+| led-yellow | 1 |
+| pushbutton | 2 |
+| resistor-220 | 4 |
 
-## Libraries
 
-- **LiquidCrystal_I2C** by Frank de Brabander — [GitHub](https://github.com/johnrickman/LiquidCrystal_I2C)
+## Firmware
 
-## Files
+Firmware files are in the `firmware/` folder.
 
-- `firmware/reflex_duel.ino` — Arduino sketch
-- `wiring/wiring_diagram.png` — wiring diagram
-- `Libraries/` — LiquidCrystal_I2C
+
+## Build Journal
+
+Build journal entries are kept in [`journals.md`](journals.md).
+
+
+---
+
+
+
+*Made in [Breadboard](https://breadboard.hackclub.com) — 1.4h of work*
+
+
+
+<p align="center"><img src="https://cdn.hackclub.com/019efae7-6857-75a2-8bc1-2618087b4eae/a%20bred%20tanuki%20(3).png" width="64" alt="Breadboard mascot" /></p>
