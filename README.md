@@ -21,7 +21,7 @@ The circuit is captured in `breadboard-project.json`, and the firmware that runs
 
 ## How To Use It
 
-1 2 3
+Connect the Wiring and upload the firmware to the ARDUINO and play with your friend
 
 
 ## Demo
