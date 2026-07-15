@@ -10,7 +10,7 @@ Built for Hack Club Breadboard YSWS.
 
 ## Wiring
 
-![Wiring Diagram](wiring/wiring_diagram.png)
+![Wiring Diagram](wiring_diagram.png)
 
 | Component | Arduino Pin |
 |---|---|
